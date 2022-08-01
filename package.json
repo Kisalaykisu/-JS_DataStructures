@@ -1,0 +1,22 @@
+{
+  "name": "js_datastructures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PrimeFactors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kisalaykisu/JS_DataStructures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kisalaykisu/JS_DataStructures/issues"
+  },
+  "homepage": "https://github.com/Kisalaykisu/JS_DataStructures#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
