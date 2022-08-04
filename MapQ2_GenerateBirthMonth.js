@@ -1,16 +1,25 @@
-// welcome 
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+var icon;
 
-let birthMonthsMap = new Map();
-let individual = 0;
-for(m=1;m<13;m++){
-    birthMonthsMap.set(m,0);
+if (hourNow < 12){
+  greeting = "Good Morning";
+  icon = "coffee";
 }
-while(individual<50){
-    month = Math.floor(Math.random()*12) + 1;
-    count = birthMonthsMap.get(month) + 1;
-    birthMonthsMap.set(month,count);
-    individual++;
+else if (hourNow < 20){
+  greeting = 'Good afternoon!';
+  icon = "sun-o";
 }
-for (const [key, value] of birthMonthsMap.entries()) {
-        console.log('Month  ' + key + ' = ' + value + ' Individuals');
+else if (hourNow < 24){
+  greeting = "Good evening"
+  icon = "moon-o";
 }
+else {
+  greeting = "Welcome";
+}
+
+document.getElementById("col-1").innerHTML = "<h3>" + greeting + " </h1>";
+
+document.getElementById("icon").innerHTML = ('<i class="fa fa-' + icon + '" aria-hidden="true"></i>');// welcome 
+
