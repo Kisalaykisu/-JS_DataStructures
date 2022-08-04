@@ -1,3 +1,5 @@
+// welcome 
+
 let birthMonthsMap = new Map();
 let individual = 0;
 for(m=1;m<13;m++){
