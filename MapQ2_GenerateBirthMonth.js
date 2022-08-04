@@ -1,4 +1,4 @@
-// welcome 
+// welcome to the birthday month
 
 let birthMonthsMap = new Map();
 let individual = 0;
